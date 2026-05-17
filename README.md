@@ -1,55 +1,51 @@
 # TM-Shooter
-## 2D DANMAKU Shooter on tmlib.js
+## 基于 tmlib.js 的 2D 弹幕射击游戏
 
-HTML5弾幕STG、GL-Shooterシリーズの２作目です。
+HTML5 弹幕射击游戏，GL-Shooter 系列的第二作。
 
 <img src="glshooter2.png" />
 
-http://daishihmr.github.io/glshooter2/ (Google Chrome専用)
+**[🕹️ 在线游玩](https://shooter.tangdan.cc)**
 
 ## 操作方法
 
- * カーソルキー ... 移動
- * Cキーを連打 ... ショット
- * Cキーを押しっぱなし ... レーザー
- * Xキー ... ボンバー or ハイパーシステム起動
- * Zキー ... ショットをフルオート発射
+ * 方向键 ... 移动
+ * C 键连打 ... 射击
+ * C 键长按 ... 激光
+ * X 键 ... 炸弹 / 启动超级系统
+ * Z 键 ... 全自动射击
 
-## コンセプト
+## 设计理念
 
-コンセプトは「tmlib.jsによる怒首領蜂再現」。
+本游戏的设计理念是「使用 tmlib.js 重现怒首领蜂」。
 
-具体的には
+具体来说包括：
 
- * tmlib.js + bulletml.jsのみで作る
- * 空中物・地上物の区別
- * 早回し・遅回し
- * ショットとレーザーを撃ちわけ
- * ボム・オートボム・ハイパーシステム・大型機撃破時の弾消し
- * GPS(ゲットポイントシステム)
- * 自機・スタイル選択
- * 鬼畜難度
+ * 仅使用 tmlib.js + bulletml.js 制作
+ * 空中物与地面物的区分
+ * 快速推进与慢速推进
+ * 射击与激光的切换使用
+ * 炸弹、自动炸弹、超级系统、击破大型机时的弹幕消除
+ * GPS（获取点数系统）
+ * 战机/风格选择
+ * 鬼畜难度
 
-こんな感じかな？
+## 游戏素材的再利用
 
-このゲームの開発を通じてtmlib.jsへの機能追加や不具合解消に貢献できたら幸いです。
+本应用程序素材的再利用条件如下。
 
-## ゲーム素材の再利用について
+### JavaScript 及 HTML 文件
 
-本アプリケーション素材の再利用条件は以下のとおりです。
+版权归 daishihmr (daishi.hmr(at)gmail.com) 所有。
 
-### JavaScriptおよびHTMLファイル
+所有 js 文件和 html 文件均可在 MIT 许可协议下再利用。
 
-著作権はdaishihmr(daishi.hmr(at)gmail.com)に帰属します。
+详细的版权信息请参阅各文件内的许可声明。
 
-jsファイル、およびhtmlファイルはすべてMITライセンスのもとで再利用可能です。
+### 图像素材
 
-詳細な著作権情報については、個々のファイル内のライセンス表記を参照ください。
-
-### 画像素材
-
-以下の画像ファイルはdaishihmrとProjectTeam DoGA様の共同著作物となります。
-非営利目的での再利用が可能です。詳細は以下のURLを参照ください。
+以下图像文件为 daishihmr 与 ProjectTeam DoGA 的共同著作物。
+可用于非营利目的的再利用。详情请参阅以下 URL。
 
 http://doga.jp/2010/programs/dogal/dogal3/license.html
 
@@ -57,26 +53,26 @@ http://doga.jp/2010/programs/dogal/dogal3/license.html
  * assets/tex1.png
  * assets/tex_stage1.png
  * assets/tex/tank1.png
- * assets/rawディレクトリ内のpngファイル
- * assets/raw/l3pディレクトリ以下の全ファイル
+ * assets/raw 目录内的 png 文件
+ * assets/raw/l3p 目录下的所有文件
 
-その他のassetsディレクトリ内画像ファイルはdaishihmrの著作物です。
+assets 目录内的其他图像文件为 daishihmr 的著作物。
 
-MITライセンスのもとで再利用可能です。
+可在 MIT 许可协议下再利用。
 
-### 音声素材
+### 音频素材
 
-assets2ディレクトリ内の音声ファイルの利用条件については、assets2/COPYRIGHTを参照し、個々の素材ごとの利用条件に従ってください。
+assets2 目录内音频文件的使用条件，请参阅 assets2/COPYRIGHT，并遵循各素材的使用条件。
 
-### フォント素材
+### 字体素材
 
-fontディレクトリ内のフォントファイルの利用条件については、以下のtxtファイルを参照ください。
+font 目录内字体文件的使用条件，请参阅以下 txt 文件。
 
  * Orbitron-Regular.ttf
   * OFL.txt
  * UbuntuMono-Bold.ttf
   * UFL.txt
 
-### その他
+### 其他
 
-「怒首領蜂」は株式会社ケイブ様の登録商標です。
+「怒首领蜂」是株式会社 CAVE 的注册商标。
