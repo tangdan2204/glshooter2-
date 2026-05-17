@@ -19,7 +19,7 @@ var STATS = false;
  *   hキーでハイパーチャージ
  *   pキーでスクリーンショットを撮る
  */
-var DEBUG = true;
+var DEBUG = false;
 
 /**
  * @define {string}

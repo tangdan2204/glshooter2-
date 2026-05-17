@@ -88,9 +88,9 @@ gls2.ShipSelectScene = tm.createClass(
         this.labelType.addChildTo(types);
 
         var typeDescription = [
-            "一点集中型\nスピード：最速\n\n絶大な威力を誇る\n正面火力と\nスピードで\n敵を蹂躙する",
-            "可変型\nスピード：中\n\n正面と両サイドに\n撃ち分けできる\n可変型ビットを持つ\nテクニカルな機体",
-            "広範囲型\nスピード：遅\n\n広範囲に攻撃可能な\nワイドショットを\n持つ機体\n高い掃討能力",
+            "集中火力型\n速度：最快\n\n拥有强大威力的\n正面火力\n以速度碾压敌人",
+            "可变型\n速度：中等\n\n可向正面和两侧\n切换射击的\n可变型浮游炮\n技巧型机体",
+            "广范围型\n速度：较慢\n\n拥有广范围攻击\n扩散射击的机体\n扫荡能力极强",
         ];
 
         this.labelTypeDescription = tm.display.Label(typeDescription[0], 16).setPosition(SC_W*0.5, 500);
@@ -227,10 +227,10 @@ gls2.ShipSelectScene = tm.createClass(
         }.bind(this));
 
         var styleDescription = [
-            "ショット強化型\n\nビットを４つ装備した\nショット重視のスタイル",
-            "レーザー強化型\n\nレーザーの威力に優れ\n対大型機戦で\n有利なスタイル",
-            "エキスパート強化型\n\nショットとレーザーの\n両方が強化されたスタイル\n\n<<ゲーム難易度が上昇します！>>\n<<上級者向け>>",
-            "ビギナー養成型\n\nショットとレーザーの両方を\n同時に発射できるスタイル\n\n<<スコアが1/10になります！>>\n<<初心者向け>>"
+            "射击强化型\n\n装备4个浮游炮的\n重视射击的风格",
+            "激光强化型\n\n激光威力优秀\n对大型机战斗\n有利的风格",
+            "专家强化型\n\n射击和激光\n两者都被强化的风格\n\n<<游戏难度会上升！>>\n<<适合高级玩家>>",
+            "新手养成型\n\n可以同时发射\n射击和激光的风格\n\n<<分数变为1/10！>>\n<<适合初学者>>"
         ];
 
         this.labelStyleDescription = tm.display.Label(styleDescription[0], 16).setPosition(SC_W*0.5, 500);
@@ -287,8 +287,8 @@ gls2.ShipSelectScene = tm.createClass(
         this.openDialogMenu("AUTO BOMB", [ "on", "off", ], this.onResultAutoBombDialog, {
             "defaultValue": 0,
             "menuDescriptions": [
-                "被弾時に自動でボンバーを投下します",
-                "ボンバーの投下は手動でのみ行います。ミス時に最大ボム数が増加します",
+                "被弹时自动投放炸弹",
+                "炸弹仅通过手动投放。被击落时最大炸弹数增加",
             ],
             "showExit": true,
         });
@@ -303,7 +303,7 @@ gls2.ShipSelectScene = tm.createClass(
         this.openDialogMenu("ARE YOU READY?", [ "ok" ], this.onResultConfirmDialog, {
             "defaultValue": 0,
             "menuDescriptions": [
-                "出撃します",
+                "出击！",
             ],
             "showExit": true,
         });

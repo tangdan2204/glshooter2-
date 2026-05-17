@@ -289,19 +289,19 @@ gls2.GlShooter2 = tm.createClass(
             "dataType": "json",
             "success": function(result) {
                 if (!result) {
-                    callback("スコア登録に失敗しました！＞＜");
+                    callback("分数注册失败！>_<");
                 } else if (result["success"]) {
                     callback(null, true, result["scoreId"]);
                 } else if (result["confirmLogin"]) {
-                    if (window.confirm("login (or sign up) ?\nログインしていません。ログインしますか？")) {
+                    if (window.confirm("login (or sign up) ?\n尚未登录。是否登录？")) {
                         window["onchildclose"] = function() {
                             this.postScore(null, callback);
                             window["onchildclose"] = undefined;
                         }.bind(this);
                         window.open("/loginByPopup", "login", "menubar=no,location=no,resizable=no,scrollbars=no,status=no,width=400,height=400");
-                    } else if (window.confirm("try anonymous submit?\n匿名でスコア登録しますか？")) {
+                    } else if (window.confirm("try anonymous submit?\n是否匿名注册分数？")) {
                         var userName = "";
-                        while (userName === "") userName = window.prompt("user name\n仮のユーザー名:", this.getAnonName());
+                        while (userName === "") userName = window.prompt("user name\n临时用户名:", this.getAnonName());
                         if (userName === null) return;
                         userName = userName.substring(0, 10);
                         this.postScore(userName + " (匿名)", callback);
@@ -309,7 +309,7 @@ gls2.GlShooter2 = tm.createClass(
                         callback(null, false);
                     }
                 } else {
-                    callback("スコア登録に失敗しました！＞＜");
+                    callback("分数注册失败！>_<");
                 }
             }.bind(this),
             "error": function() {
@@ -320,14 +320,14 @@ gls2.GlShooter2 = tm.createClass(
 
     getAnonName: function() {
         return [
-            "名無しシューター",
-            "名無し大佐",
-            "名無しにゃん",
-            "名無したそ",
-            "名無し☆",
-            "能登名無し",
-            "名無し(30)",
-            "名無し総理"
+            "无名射手",
+            "无名大佐",
+            "无名喵",
+            "无名酱",
+            "无名☆",
+            "无名玩家",
+            "无名(30)",
+            "无名总理"
         ]["pickup"]();
     },
 

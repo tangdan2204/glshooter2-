@@ -120,10 +120,10 @@ gls2.TitleScene = tm.createClass({
     openMainMenu: function() {
         var menu = [ "arcade mode", "training mode", "tutorial", "setting" ];
         var labels = [
-            "ゲームを開始します",
-            "トレーニングを開始します",
-            "チュートリアルを開始します",
-            "設定を変更します"
+            "开始游戏",
+            "开始训练",
+            "开始教程",
+            "更改设置"
         ];
         this.openDialogMenu("MAIN MENU", menu, this.onResultMainMenu, {
             "defaultValue": this.lastMainMenu,
@@ -233,10 +233,10 @@ gls2.TitleScene = tm.createClass({
         ], this.onResultSetting, {
             "defaultValue": this.lastSetting,
             "menuDescriptions": [
-                "BGMボリュームを設定します",
-                "効果音ボリュームを設定します",
-                "パーティクルのON/OFFを設定します",
-                "敵弾の見た目に関する設定です"
+                "设置BGM音量",
+                "设置音效音量",
+                "设置粒子效果开关",
+                "设置敌弹外观"
             ],
         });
     },
@@ -307,8 +307,8 @@ gls2.TitleScene = tm.createClass({
             "defaultValue": gls2.core.bulletBig,
             "showExit": false,
             "menuDescriptions": [
-                "通常サイズで表示します",
-                "大きめに表示します"
+                "以正常大小显示",
+                "以较大尺寸显示"
             ]
         });
     },

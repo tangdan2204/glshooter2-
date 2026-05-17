@@ -72,13 +72,13 @@ gls2.GameOverScene = tm.createClass(
 
         var menu = [ "tweet result", "back to title" ];
         var labels = [
-            "スコアをTwitterへ投稿します",
-            "タイトルへ戻ります"
+            "将分数分享到Twitter",
+            "返回标题画面"
         ];
 
         if (!this.posted && gls2.core.mode === 0) {
             menu.push("save score");
-            labels.push("スコアを登録します");
+            labels.push("注册分数");
         }
 
         this.openDialogMenu("GAME OVER", menu, this.onResultMenu, {
@@ -100,14 +100,14 @@ gls2.GameOverScene = tm.createClass(
 
     openSuccessDialog: function() {
         this.openDialogMenu("SUCCESS!", ["ok"], function() { this.openMenu() }, {
-            "menuDescriptions": ["スコア登録しました！"],
+            "menuDescriptions": ["分数注册成功！"],
             "showExit": false
         });
     },
 
     openErrorDialog: function() {
         this.openDialogMenu("ERROR!", ["ok"], function() { this.openMenu() }, {
-            "menuDescriptions": ["スコア登録に失敗しました！＞＜"],
+            "menuDescriptions": ["分数注册失败！>_<"],
             "showExit": false
         });
     },
